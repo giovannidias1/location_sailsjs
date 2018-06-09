@@ -14,13 +14,19 @@ module.exports = {
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     cpf :{
       type: 'string',
-      required: true
+      required: true,
+      unique: true
+
     },
     nome :{
       type: 'string',
       required: true
     },
     rua: {
+      type: 'string',
+      required: true
+    },
+    bairro: {
       type: 'string',
       required: true
     },
@@ -41,6 +47,10 @@ module.exports = {
       required: true
     },
     telefone: {
+      type: 'string',
+      required: true
+    },
+    celular: {
       type: 'string',
       required: true
     },
