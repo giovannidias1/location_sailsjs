@@ -14,8 +14,8 @@ module.exports = {
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     placa: {
       type: 'string',
-      required: true
-
+      required: true,
+      unique: true
     },
     montadora: {
       type: 'string',
@@ -37,6 +37,10 @@ module.exports = {
       type: 'string',
       required: false
     },
+    status:{
+      type: 'boolean',
+      defaultsTo: true,
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -46,7 +50,7 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    carro: {
+    agencia: {
       model: 'agencia'
     },
     aluguel:{

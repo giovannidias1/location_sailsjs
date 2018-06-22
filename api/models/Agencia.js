@@ -12,7 +12,15 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+    nome: {
+      type: 'string',
+      required: true
+    },
     rua: {
+      type: 'string',
+      required: true
+    },
+    bairro: {
       type: 'string',
       required: true
     },
@@ -36,6 +44,10 @@ module.exports = {
       type: 'string',
       required: true
     },
+    status:{
+      type: 'boolean',
+      defaultsTo: true,
+    },
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
     //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
@@ -46,11 +58,11 @@ module.exports = {
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
     funcionario: {
       collection: 'funcionario',
-      via: 'employee'
+      via: 'agencia'
     },
     carroAgencia: {
       collection: 'Carros',
-      via: 'carro'
+      via: 'agencia'
     }
 
   },
