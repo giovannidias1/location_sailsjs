@@ -10,12 +10,10 @@ module.exports = {
   attributes: {
     dataDevolucao: {
       type: 'string',
-      columnType: 'datetime',
       unique: true
     },
     dataLocacao: {
       type: 'string',
-      columnType: 'datetime',
       unique: true
     },
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
